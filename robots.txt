@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Troque pelo domínio real antes de publicar
+Sitemap: https://www.seudominio.com.br/sitemap.xml

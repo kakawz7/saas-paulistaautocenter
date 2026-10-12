@@ -19,7 +19,7 @@ DESIGN.md               → regras do visual, para manter o padrão em mudanças
 
 1. **Domínio:** procure `https://www.seudominio.com.br` em `index.html`, `sitemap.xml` e `robots.txt` e troque pelo domínio real.
 2. **Fotos:** as fotos atuais são do Unsplash e do Pexels (gratuitas para uso comercial, sem obrigação de crédito) e carregam direto desses sites. O ideal é trocar por fotos reais da oficina. Cada foto está marcada no HTML com o comentário `<!-- FOTO -->`. Para trocar, coloque o arquivo em `assets/img/` e mude o `src` (e apague o `srcset`).
-3. **Mapa:** o mapa usa o endereço da avenida. Para o pino exato, abra a oficina no Google Maps → Compartilhar → Incorporar um mapa, copie só o endereço do `src` e cole no `<iframe>` da seção Contato.
+3. **Mapa:** o mapa busca pelo nome da oficina + endereço, e o botão "Abrir no Google Maps" abre a ficha da oficina. Se o pino não cair no lugar certo, abra a oficina no Google Maps → Compartilhar → Incorporar um mapa, copie só o endereço do `src` e cole no `<iframe>` da seção Contato.
 
 ## Como editar o mais comum
 
@@ -29,7 +29,7 @@ Use "Localizar e substituir" (Ctrl+H no VS Code) em `index.html`:
 |---|---|
 | WhatsApp principal | `5565981151311` (aparece em todos os botões) |
 | Mensagem do WhatsApp | `Ol%C3%A1%2C%20Amauri` — a mensagem fica codificada na URL; gere a nova em qualquer "gerador de link WhatsApp" |
-| Outros telefones | `93681-5409` e `99273-4110` (texto) e `5565936815409` / `5565992734110` (links `tel:`) |
+| Outros telefones | `3681-5409` e `99273-4110` (texto) e `556536815409` / `5565992734110` (links `tel:`) |
 | E-mail | `paulistaautocenter.vendas@gmail.com` |
 | Endereço | `Filinto Müller` |
 | Serviços | seção `SERVIÇOS`: cada serviço é um `<li>` com nome e descrição |
